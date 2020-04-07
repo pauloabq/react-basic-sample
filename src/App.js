@@ -45,7 +45,10 @@ class App extends Component{
         const { characters } = this.state;
         return(
             <div className="container">
+                <h1>React Tutorial</h1>
+                <p>Adicione um personagem e um trabalho.</p>
                 <Table characterData={characters} removeCharacter={this.removeCharacter}/>
+                <h1>Adicionar novo</h1>
                 <Form handleSubmit={this.handleSubmit} />
             </div>
         )
