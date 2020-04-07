@@ -34,7 +34,11 @@ class App extends Component{
 
 
     handleSubmit = character => {
-       this.setState({ characters: [...this.state.characters, character] })
+        if(character.name){
+            this.setState({ characters: [...this.state.characters, character] })
+        } else {
+            return null;
+        }
     }
 
     render(){
